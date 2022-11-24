@@ -43,7 +43,7 @@ u1 = u1 .+ delta1
 
 function foo1(du1, u1, p, t)
     for i in 1:N1
-        du1[i] = (u1[i]^3 - u1[i]^2)
+        du1[i] = (u1[i]^2 - u1[i]^3)
     end
 end
 
@@ -80,7 +80,7 @@ u2 = u2 .+ delta2
 
 function foo2(du2, u2, p, t)
     for i in 1:N2
-        du2[i] = (u2[i]^3 - u2[i]^2)
+        du2[i] = (u2[i]^2 - u2[i]^3)
     end
 end
 
