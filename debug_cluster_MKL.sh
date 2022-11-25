@@ -20,4 +20,4 @@ echo "------------------------------------------------------------"
 export PATH=$PATH:/p/system/packages/perf-tools/bin
 
 module load julia/1.8.2
-perf record -o perf-debug_cluster_MKL-$jobid.data julia --threads=$SLURM_CPUS_PER_TASK /home/borneman/Masterarbeit/debug_pik_cluster/debug_cluster.jl MKL
+perf record -o perf-debug_cluster_MKL-$SLURM_JOBID.data julia --threads=$SLURM_CPUS_PER_TASK /home/borneman/Masterarbeit/debug_pik_cluster/debug_cluster.jl MKL
